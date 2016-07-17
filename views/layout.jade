@@ -1,0 +1,28 @@
+doctype html
+
+html
+
+  head
+
+    title= title
+
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  #toppanel
+    #mainlogo
+      img(src='/images/Logo.png')
+  #sidepanel
+    form(name="input", action="/login", method="post")
+      input(type="text", name="username", placeholder="Username")
+      input(type="password", name="password", placeholder="Password")
+    br
+    a(href="/login") Login
+    br
+    a(href="/register") Register
+    br
+    a(href="/editprofile") Edit Profile
+    br
+    a(href="/logout") Logout
+    br
+    a(href="/") Home
+  #maincontent
+    block content

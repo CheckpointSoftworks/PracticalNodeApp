@@ -1,0 +1,9 @@
+extends layout
+
+
+
+block content
+  if (!user)
+    p You are currently not logged in.
+  if (user)
+    p You are currently logged in as #{user.username}
